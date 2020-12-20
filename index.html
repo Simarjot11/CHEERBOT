@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <title>Chatbot Widget</title>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Import Font Awesome Icon Font-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="static/css/materialize.min.css"
+    />
+
+    <!--Main css-->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+  	<div class="Top">
+  		<p style="font-size: 130px;">Cheer Bot <img src="Logo_main.png" height="150" width="150" style="vertical-align:middle;"></p>
+
+  	</div>
+  	<div class="Para">
+  		<p style="font-size: 20px; color: white;">
+  			About our Bot:<br>
+So our team has designed a highly trained bot, ‘CHEERBOT’ related to the field of psychology in order to help people to remain motivated and happy and if any tension hit you , you have your own bot friend which can handle your certain issues and also give you good advice just like a friend . This bot can handle a wide variety of problems related to mental health . It lightens your mood as well as anxiety that’s why we name it as CHEERBOT 🙂.<br>
+So Please try it Yourselves it will cheer you up.
+  		</p>
+  	</div>
+    <div class="container">
+      <!-- Modal for rendering the charts, declare this if you want to render charts, 
+         else you remove the modal -->
+      <div id="modal1" class="modal">
+        <canvas id="modal-chart"></canvas>
+      </div>
+
+      <!--chatbot widget -->
+      <div class="widget">
+        <div class="chat_header">
+          <!--Add the name of the bot here -->
+          <span class="logoContainer">
+            <span class="iconContainer">
+              <img class="headerLogo" src="./static/img/logo2.png" />
+              <div class="onlineCircle"></div>
+            </span>
+            <span class="chat_header_title">
+              <p>Cheer Bot</p>
+              <p class="onlineStatus">Online</p>
+            </span>
+          </span>
+          <span class="dropdown-trigger" href="#" data-target="dropdown1">
+            <i class="material-icons"> more_vert </i>
+          </span>
+
+          <!-- Dropdown menu-->
+          <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#" id="clear">Clear</a></li>
+            <li><a href="#" id="restart">Restart</a></li>
+            <li><a href="#" id="close">Close</a></li>
+          </ul>
+        </div>
+
+        <!--Chatbot contents goes here -->
+        <div class="chats" id="chats">
+          <div class="clearfix"></div>
+          <img class="botAvatar" src="./static/img/logo2.png" />
+          <p class="botMsg">Hi, Welcome to CHEERBOT! &#x1f44b;</p>
+          <div class="clearfix"></div>
+        </div>
+
+        <!--keypad for user to type the message -->
+        <div class="keypad">
+          <textarea
+            id="userInput"
+            placeholder="Type your message here"
+            class="usrInput"
+          ></textarea>
+          <div id="sendButton">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+
+      <!--bot profile-->
+      <div class="profile_div" id="profile_div">
+        <img class="imgProfile" src="static/img/botAvatar.png" />
+      </div>
+
+      <!-- Bot pop-up intro -->
+      <div class="tap-target" data-target="profile_div">
+        <div class="tap-target-content">
+          <h5 class="black-text">Hey there 👋</h5>
+          <p class="black-text">
+            I am Covid bot. Lets have a conversation
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/materialize.min.js"></script>
+
+    <!--Main Script -->
+    <script type="text/javascript" src="static/js/script.js"></script>
+
+    <!--Chart.js Script -->
+    <script type="text/javascript" src="static/js/chart.min.js"></script>
+  </body>
+</html>

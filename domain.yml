@@ -1,0 +1,156 @@
+intents:
+  - greet
+  - goodbye
+  - inform
+  - students
+
+
+
+entities:
+  - username
+  - phone_number
+  - mailid
+  - student_problem
+  - elderly_problem
+  - professional_problem
+ 
+  
+slots:
+  username:
+    type: unfeaturized
+  phone_number:
+    type: unfeaturized
+  mailid:
+    type: unfeaturized
+  student_problem:
+    type: unfeaturized
+  elderly_problem:
+    type: unfeaturized
+  professional_problem:
+    type: unfeaturized
+ 
+
+forms:
+  - info_form
+  - student_form
+  - elderly_form
+  - professional_form
+  
+
+responses:
+
+  utter_ask_username:
+  - text: Can you please enter your name?
+  
+  utter_ask_mailid:
+  - buttons:
+    - payload: '/inform{"mailid": "back1"}'
+      title: Change name
+    text: Nice to meet you! Can you please tell me your email?
+
+  utter_ask_phone_number:
+  - buttons:
+    - payload: '/inform{"phone_number": "back2"}'
+      title: Change Mail-id
+    text: Kindly enter your phone number
+  
+  utter_wrong_mailid:
+  - text: You have entered wrong mailid.
+  
+  utter_wrong_phonenumberalpha:
+  - text: Phone number must not include alphabets and special characters.
+  
+  utter_wrong_phone_number:
+  - text: Phone number must be of 10 digits
+  utter_wrong_age_range:
+  - text: Kindly enter age between 11-99.
+  utter_ask_student_problem:
+  - text: Kindly select an option from below given options.
+    buttons:
+        - title: 'Effect on Studies'
+          payload: '/inform{"student_problem": "Effect on Studies"}'
+        - title: 'Overthinking and Anxiety'
+          payload: '/inform{"student_problem": "Anxiety"}'
+        - title: 'Bored'
+          payload: '/inform{"student_problem": "Bored"}'
+        - title: 'Health Related'
+          payload: '/inform{"student_problem": "Health Related"}'
+        
+  utter_ask_professional_problem:
+  - text: Kindly select an option from below given options.
+    buttons:
+        - title: 'Job Related'
+          payload: '/inform{"professional_problem": "Job Related"}'
+        - title: 'Work Stress'
+          payload: '/inform{"professional_problem": "Work Stress"}'
+        - title: 'Health Related'
+          payload: '/inform{"professional_problem": "Health Related"}'
+          
+
+    
+  utter_ask_elderly_problem:
+  - text: Kindly select an option from below given options.
+    buttons:
+        - title: 'Medical Facilities'
+          payload: '/inform{"elderly_problem": "Medical Facilities"}'
+        - title: 'Covid Phobia'
+          payload: '/inform{"elderly_problem": "Covid Phobia"}'
+        - title: 'Bored'
+          payload: '/inform{"elderly_problem": "Bored"}'
+        - title: 'Health Related'
+          payload: '/inform{"elderly_problem": "Health Related"}'
+ 
+  utter_ask_what_to_do:
+  - text: Kindly select the below option so that I can help you.
+    custom:
+        payload: collapsible
+        data:
+        - title: Teenager
+          description: 'Hi!, I am your artificial assistant 🖲, kindly select from below given options if you are belonging to the age group of 13-23 '
+          notes:
+              - name: "Students"
+                resp: "Students"
+        - title: Professionals
+          description: 'Hi!, I am your artificial assistant 🖲, kindly select from below given options if you are belonging to the age group of 24-59'
+          notes:
+              - name: "Job Related"
+                resp: "Job Related"
+              - name: "Work Stress"
+                resp: "Work Stress"
+              - name: "Health Related"
+                resp: "Health Related"
+        - title: Elderly People
+          description: 'Hi!, I am your artificial assistant 🖲, kindly select from below given options if you are belonging to the age group of 60+'
+          notes:
+              - name: "Medical Facilities"
+                resp: "Medical Facilities"
+              - name: "Bored"
+                resp: "Bored"
+              - name: "Health Related"
+                resp: "Health Related"
+              - name: "Covid Phobia"
+                resp: "Covid Phobia"
+        - title: Covid Information
+          description: 'Hi, I am your artificial assistant 🖲️ and I can help you out with tracking the latest information about Covid-19 around the world.'
+          notes:
+              - name: "Covid Symptoms"
+                resp: "Covid Symptoms"
+              - name: "Covid-19 count"
+                resp: "Covid-19 count"
+              - name: "Latest Discovery"
+                resp: "Latest Discovery"
+        - title: Contact Us
+          description: 'Hi, I am your artificial assistant 🖲️ and in case you have any further query kindly contact simarjotbali2000@gmail.com.'
+          notes:
+              - name: ""
+                resp: ""
+        - title: About Us
+          description: 'Hi, I am your artificial assistant 🖲️ and I am developed by a team of Btech. undergraduates at J.U.I.T.'
+          notes:
+              - name: ""
+                resp: ""
+  
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
