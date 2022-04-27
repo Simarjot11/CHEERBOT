@@ -33,20 +33,20 @@ PROBLEMS FACING BY MID AGE GROUP PEOPLE:
 
 a)	JOB LOST/ JOB SECURITY/ BUSINESS LOSS: suddenly, this pandemic came and affected the mid age group very much because many people had to lose their jobs because everything was shut, business leaders also suffered a big loss during the pandemic.
 
-    b)  HOUSEHOLD FINANCES: those who lost their jobs in the
-         pandemic are the ones who earn from the daily basis work and
-         fulfill their livelihood. But they had to leave their houses in this   
-         Pandemic.
+ b)  HOUSEHOLD FINANCES: those who lost their jobs in the
+     pandemic are the ones who earn from the daily basis work and
+     fulfill their livelihood. But they had to leave their houses in this   
+     Pandemic.
 
-    c) LOAD OF WORK DUE TO WORK FROM HOME: someone lost 
-        their job, so someone has to fill his place by doing extra work in the
-        same income for their job security, they didn't get a single leave 
-        (even on weekends ) throughout the pandemic.
+c) LOAD OF WORK DUE TO WORK FROM HOME: someone lost 
+   their job, so someone has to fill his place by doing extra work in the
+   same income for their job security, they didn't get a single leave 
+    (even on weekends ) throughout the pandemic.
 
-    d) HEALTH AND PHYSIQUE: to maintain their body and to prepare
-        themselves for the work, physical as well as the mental preparation
-        are important, that was nor possible in the pandemic due to extra
-        load of work , so it results in causing laziness in people. 
+d) HEALTH AND PHYSIQUE: to maintain their body and to prepare
+   themselves for the work, physical as well as the mental preparation
+   are important, that was nor possible in the pandemic due to extra
+   load of work , so it results in causing laziness in people. 
 
 
 
