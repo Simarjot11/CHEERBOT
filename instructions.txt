@@ -1,0 +1,10 @@
+
+to run cheerbot online
+
+conda activate installingrasa
+rasa run actions 
+rasa run --enable-api --cors "*" --debug
+
+
+to run rasa project : conda activate installingrasa
+		rasa shell
