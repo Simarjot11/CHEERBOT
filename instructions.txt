@@ -1,10 +1,20 @@
+To run cheerbot online
+1.Open Anaconda Prompt
+2.Got to the directory where project is placed.
+3.Now Give the following commands in sequence:
+  ->conda activate installingrasa
+  ->rasa run actions
+ 4. Open a new window of anaconda prompt
+ 5. Run the fol;lowing commands:
+    -> Go to directory.
+    ->conda activate installingrasa
+    ->rasa run --enable-api --cors "*" --debug
+6. Click on index.html file
+****************** CheerBot is up and running********************
 
-to run cheerbot online
 
+To run rasa project : 
 conda activate installingrasa
-rasa run actions 
-rasa run --enable-api --cors "*" --debug
-
-
-to run rasa project : conda activate installingrasa
-		rasa shell
+rasa shell
+		
+		
